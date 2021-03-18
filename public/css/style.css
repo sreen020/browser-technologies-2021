@@ -90,6 +90,11 @@ body {
   pointer-events: none;
 }
 
+.adjustment-section form fieldset input[type="radio"]:checked + label {
+  background: #000;
+  color: #fff;
+}
+
 .submit-field {
   display: flex;
   justify-content: space-between;
@@ -116,4 +121,24 @@ body {
   background: #fff;
   border: 1px solid #000;
   color: #000;
+}
+
+/* ---------------- */
+/* SHOPPING BAG  */
+
+.bag-section {
+  padding: 3rem;
+  width: 100%;
+}
+
+.bag-item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divider {
+  width: 1px;
+  height: 3rem;
+  background: #000;
 }
