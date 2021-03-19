@@ -2,8 +2,6 @@ import bodyParser from "body-parser";
 import express from "express";
 
 import fs from "fs";
-const data = fs.readFileSync("./data.json");
-const readableData = JSON.parse(data);
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -27,15 +25,13 @@ app.get("/shoppingBag", (req, res) => {
 });
 
 app.post("/shoppingBag", urlencodedParser, (req, res) => {
-  const stringData = JSON.stringify(req.body);
-  fs.writeFileSync("data.json", stringData, finished);
+  const readableData = JSON.parse(fs.readFileSync("./data.json"));
+  readableData.data.push(req.body);
 
-  function finished() {
-    console.log("finished...");
-  }
-  const newData = fs.readFileSync("./data.json");
-  const sendData = JSON.parse(newData);
-  res.render("shopping-bag.ejs", { data: sendData });
+  const stringData = JSON.stringify(readableData, null, 2);
+  fs.writeFileSync("data.json", stringData);
+  console.log(stringData);
+  res.render("shopping-bag.ejs", { data: readableData });
 });
 
 // Start server

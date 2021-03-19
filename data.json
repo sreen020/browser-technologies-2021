@@ -1,1 +1,22 @@
-{"shirtColor":"black","gender":"other","shirtSize":"xl","amount":"1"}
+{
+  "data": [
+    {
+      "shirtColor": "red",
+      "gender": "man",
+      "shirtSize": "xs",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "blue",
+      "gender": "woman",
+      "shirtSize": "m",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "black",
+      "gender": "other",
+      "shirtSize": "xl",
+      "amount": "1"
+    }
+  ]
+}

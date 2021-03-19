@@ -16,6 +16,8 @@
     <section class="bag-section">
       <h1>Shopping bag</h1>
       <h3>TOTAL ITEMS: 3</h3>
+
+      <% data.data.forEach((key) => { %>
       <section class="bag-item-container">
         <div>
           <svg
@@ -28,7 +30,7 @@
           >
             <g
               transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-              fill="<%= data.shirtColor %>"
+              fill="<%= key.shirtColor %>"
               stroke="none"
             >
               <path
@@ -78,14 +80,14 @@
           </svg>
         </div>
         <span class="divider"></span>
-        <p><%= data.amount %></p>
+        <p><%= key.amount %></p>
         <span class="divider"></span>
         <p>Amount</p>
         <span class="divider"></span>
         <div>
-          <p><%= data.shirtColor %></p>
-          <p><%= data.gender %></p>
-          <p><%= data.shirtSize %></p>
+          <p><%= key.shirtColor %></p>
+          <p><%= key.gender %></p>
+          <p><%= key.shirtSize %></p>
         </div>
         <span class="divider"></span>
         <div>
@@ -93,6 +95,8 @@
           <p>ICON</p>
         </div>
       </section>
+      <% }) %>
+
       <div class="button-container">
         <a href="/">STORE</a>
         <a>CHECKOUT</a>
