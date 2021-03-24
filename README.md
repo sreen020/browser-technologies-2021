@@ -20,3 +20,12 @@ Op deze website moet het mogelijk zijn om een t-shirt te bestellen. Dit t-shirt 
 
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="100%">
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="100%">
+
+
+## Live demo
+https://make-your-own-shirt.herokuapp.com/
+
+**Op welke browsers ga ik testen?**
+- Google Chrome
+- Firefox
+- Safari
