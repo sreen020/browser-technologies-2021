@@ -4,7 +4,7 @@ import express from "express";
 import fs from "fs";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
@@ -21,17 +21,23 @@ app.get("/", (req, res) => {
 });
 
 app.get("/shoppingBag", (req, res) => {
-  res.render("shopping-bag.ejs");
+  const readableData = JSON.parse(fs.readFileSync("./data.json"));
+  const amount = readableData.data.length;
+
+  res.render("shopping-bag.ejs", { data: readableData, amount: amount });
 });
 
-app.post("/shoppingBag", urlencodedParser, (req, res) => {
+app.post("/addShoppingBag", urlencodedParser, (req, res) => {
   const readableData = JSON.parse(fs.readFileSync("./data.json"));
+
   readableData.data.push(req.body);
 
   const stringData = JSON.stringify(readableData, null, 2);
   fs.writeFileSync("data.json", stringData);
-  console.log(stringData);
-  res.render("shopping-bag.ejs", { data: readableData });
+  const amount = readableData.data.length;
+  console.log(amount);
+
+  res.render("shopping-bag.ejs", { data: readableData, amount: amount });
 });
 
 // Start server

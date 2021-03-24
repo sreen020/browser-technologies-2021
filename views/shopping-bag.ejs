@@ -11,15 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/script.js" type="module"></script>
   </head>
   <body>
     <section class="bag-section">
       <h1>Shopping bag</h1>
-      <h3>TOTAL ITEMS: 3</h3>
+      <h3>TOTAL ITEMS: <%= amount %></h3>
 
       <% data.data.forEach((key) => { %>
       <article class="bag-item-container">
-        <div>
+        <div class="preview-container">
           <svg
             style="max-width: 6rem"
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +31,7 @@
             <g
               transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
               fill="<%= key.shirtColor %>"
-              stroke="none"
+              stroke="black"
             >
               <path
                 d="M6685 12399 c-68 -37 -272 -109 -308 -109 -10 0 -52 -9 -95 -20 -42
@@ -77,11 +78,15 @@
               />
             </g>
           </svg>
+          <p><%= key.userText %></p>
         </div>
         <span class="divider"></span>
         <p><%= key.amount %></p>
         <span class="divider"></span>
-        <p>Amount</p>
+        <div>
+          <p><strong>Text:</strong></p>
+          <p><%= key.userText %></p>
+        </div>
         <span class="divider"></span>
         <div>
           <p><%= key.shirtColor %></p>

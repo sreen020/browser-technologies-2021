@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="/js/script.js" type="module"></script>
   </head>
   <body>
     <section class="preview-section">
@@ -23,20 +24,23 @@
           <h1>CREATE YOUR SHIRT</h1>
           <p>Create your shirt on this page</p>
         </div>
-        <svg
-          style="max-width: 30rem"
-          xmlns="http://www.w3.org/2000/svg"
-          width="1063.000000pt"
-          viewBox="0 0 1063.000000 1280.000000"
-          preserveAspectRatio="xMidYMid meet"
-        >
-          <g
-            transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-            fill="#000000"
-            stroke="none"
+        <div class="shirt">
+          <h1 id="text-for-edit"></h1>
+          <svg
+            style="max-width: 30rem"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1063.000000pt"
+            viewBox="0 0 1063.000000 1280.000000"
+            preserveAspectRatio="xMidYMid meet"
           >
-            <path
-              d="M6685 12399 c-68 -37 -272 -109 -308 -109 -10 0 -52 -9 -95 -20 -42
+            <g
+              id="shirt-g"
+              transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+              fill="#000000"
+              stroke="black"
+            >
+              <path
+                d="M6685 12399 c-68 -37 -272 -109 -308 -109 -10 0 -52 -9 -95 -20 -42
   -11 -138 -24 -212 -31 -74 -6 -202 -16 -285 -23 -195 -16 -869 -14 -945 2 -30
   6 -109 14 -175 18 -115 6 -453 58 -580 90 l-60 14 -95 -40 c-52 -23 -123 -48
   -158 -56 -44 -10 -82 -29 -130 -63 -37 -27 -90 -56 -117 -65 -28 -9 -134 -60
@@ -77,16 +81,17 @@
   211 -14 9 -45 27 -70 39 -53 26 -102 53 -188 104 -35 20 -69 37 -77 37 -8 0
   -16 4 -20 10 -5 9 -167 101 -255 146 -25 13 -72 50 -105 84 -45 45 -69 62 -96
   66 -24 4 -68 29 -122 70 -47 35 -89 63 -94 63 -4 -1 -39 -19 -78 -40z"
-            />
-          </g>
-        </svg>
+              />
+            </g>
+          </svg>
+        </div>
       </div>
     </section>
     <section class="adjustment-section">
       <h2>Icon?</h2>
-      <form method="POST" action="/shoppingBag">
+      <form method="POST" action="/addShoppingBag">
         <h3>Choose color</h3>
-        <fieldset>
+        <fieldset id="color-form">
           <input
             type="radio"
             id="color-red"
@@ -148,9 +153,16 @@
           <label for="xl">XL</label>
         </fieldset>
 
-        <h3>Description</h3>
-        <fieldset>
-          <p>Description of the shirt</p>
+        <h3>Your text</h3>
+        <fieldset class="text-fieldset">
+          <input
+            type="text"
+            id="userText"
+            name="userText"
+            maxlength="6"
+            placeholder="Your text"
+          />
+          <p class="fakeButton">+ ADD</p>
         </fieldset>
 
         <fieldset class="submit-field">

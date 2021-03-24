@@ -2,56 +2,72 @@
   "data": [
     {
       "shirtColor": "red",
+      "gender": "woman",
+      "shirtSize": "xl",
+      "userText": "Test",
+      "amount": "2"
+    },
+    {
+      "shirtColor": "red",
+      "gender": "woman",
+      "shirtSize": "xl",
+      "userText": "Test",
+      "amount": "2"
+    },
+    {
+      "shirtColor": "red",
       "gender": "man",
       "shirtSize": "xs",
+      "userText": "test",
+      "amount": "8"
+    },
+    {
+      "shirtColor": "red",
+      "gender": "man",
+      "shirtSize": "xs",
+      "userText": "test",
+      "amount": "8"
+    },
+    {
+      "shirtColor": "black",
+      "gender": "other",
+      "shirtSize": "xl",
+      "userText": "</>",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "red",
+      "gender": "man",
+      "shirtSize": "xs",
+      "userText": "a",
       "amount": "1"
     },
     {
       "shirtColor": "blue",
       "gender": "woman",
       "shirtSize": "m",
-      "amount": "1"
-    },
-    {
-      "shirtColor": "black",
-      "gender": "other",
-      "shirtSize": "xl",
+      "userText": "hoi",
       "amount": "1"
     },
     {
       "shirtColor": "blue",
       "gender": "woman",
-      "shirtSize": "s",
-      "amount": "6"
-    },
-    {
-      "shirtColor": "white",
-      "gender": "other",
-      "shirtSize": "xl",
+      "shirtSize": "m",
+      "userText": "hoi",
       "amount": "1"
     },
     {
-      "shirtColor": "white",
-      "gender": "other",
-      "shirtSize": "xl",
+      "shirtColor": "blue",
+      "gender": "woman",
+      "shirtSize": "m",
+      "userText": "hoi",
       "amount": "1"
     },
     {
-      "shirtColor": "white",
-      "gender": "other",
-      "shirtSize": "xl",
-      "amount": "1"
-    },
-    {
-      "shirtColor": "white",
-      "gender": "other",
-      "shirtSize": "xl",
-      "amount": "1"
-    },
-    {
-      "shirtColor": "white",
-      "gender": "other",
-      "shirtSize": "xl",
+      "shirtColor": "blue",
+      "gender": "woman",
+      "shirtSize": "m",
+      "userText": "hoi",
       "amount": "1"
     }
   ]

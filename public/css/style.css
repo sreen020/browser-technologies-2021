@@ -34,8 +34,25 @@ body {
   align-items: center;
   padding: 3rem 0;
 }
+
 .shirt-container .shirt-title {
   width: 100%;
+}
+
+.shirt {
+  position: relative;
+}
+
+.shirt h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 7.5rem;
+  font-size: 4rem;
+  font-weight: 800;
+  color: black;
+  -webkit-text-stroke: 0.4px white;
 }
 
 /* -------------- */
@@ -123,12 +140,47 @@ body {
   color: #000;
 }
 
+.fakeButton {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  max-width: 8rem;
+}
+.fakeButton:hover,
+.fakeButton:focus {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.adjustment-section form .text-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.adjustment-section form .text-fieldset input {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 0;
+}
+
 /* ---------------- */
 /* SHOPPING BAG  */
 
 .bag-section {
   padding: 3rem;
   width: 100%;
+}
+
+.bag-section > h3 {
+  padding-bottom: 1.5rem;
 }
 
 .bag-item-container {
@@ -138,6 +190,28 @@ body {
   border: 1px solid black;
   padding: 1rem 2rem;
   margin-bottom: 2rem;
+}
+
+.preview-container {
+  position: relative;
+}
+
+.preview-container p {
+  color: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: black;
+  -webkit-text-stroke: 0.4px white;
+}
+
+svg path {
+  stroke: black;
+  stroke-width: 6rem;
 }
 
 .bag-item-container p {
@@ -154,6 +228,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 4rem;
 }
 
 .button-container a {
@@ -167,4 +242,32 @@ body {
 .button-container a:focus {
   background: black;
   color: #fff;
+}
+
+/* ----- responsive ------- */
+
+@media (max-width: 810px) {
+  body {
+    flex-direction: column;
+  }
+  .preview-section {
+    width: 100%;
+  }
+  .adjustment-section {
+    width: 100%;
+    overflow-y: unset;
+  }
+
+  .shirt-container svg {
+    width: 100%;
+  }
+
+  .bag-item-container {
+    flex-direction: column;
+  }
+  .divider {
+    transform: rotate(90deg);
+    height: 16rem;
+    margin: -6.3rem;
+  }
 }
