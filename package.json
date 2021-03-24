@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon server.js",
-    "build": "node scripts/css-build.js",
-    "watch:css": "chokidar \"src/css/*.css\" --c \"npm run build\""
+    "watch": "nodemon server.js"
   },
   "repository": {
     "type": "git",

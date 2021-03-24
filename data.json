@@ -17,6 +17,42 @@
       "gender": "other",
       "shirtSize": "xl",
       "amount": "1"
+    },
+    {
+      "shirtColor": "blue",
+      "gender": "woman",
+      "shirtSize": "s",
+      "amount": "6"
+    },
+    {
+      "shirtColor": "white",
+      "gender": "other",
+      "shirtSize": "xl",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "white",
+      "gender": "other",
+      "shirtSize": "xl",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "white",
+      "gender": "other",
+      "shirtSize": "xl",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "white",
+      "gender": "other",
+      "shirtSize": "xl",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "white",
+      "gender": "other",
+      "shirtSize": "xl",
+      "amount": "1"
     }
   ]
 }
