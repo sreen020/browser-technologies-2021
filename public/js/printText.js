@@ -3,7 +3,7 @@ export default function printText() {
   const editText = document.getElementById("text-for-edit");
 
   if (textInput) {
-    textInput.addEventListener("change", () => {
+    textInput.addEventListener("keyup", () => {
       editText.innerText = textInput.value;
     });
   }

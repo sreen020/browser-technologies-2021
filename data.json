@@ -6,6 +6,20 @@
       "shirtSize": "m",
       "userText": "",
       "amount": "1"
+    },
+    {
+      "shirtColor": "blue",
+      "gender": "woman",
+      "shirtSize": "l",
+      "userText": "aaa",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "white",
+      "gender": "other",
+      "shirtSize": "l",
+      "userText": "test",
+      "amount": "2"
     }
   ]
 }
