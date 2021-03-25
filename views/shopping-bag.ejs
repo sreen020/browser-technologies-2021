@@ -19,7 +19,7 @@
       <h3>TOTAL ITEMS: <%= amount %></h3>
 
       <% data.data.forEach((key) => { %>
-      <article class="bag-item-container">
+      <article class="bag-item-container" data-idShirt="<%= key.id %>">
         <div class="preview-container">
           <svg
             style="max-width: 6rem"
@@ -94,8 +94,8 @@
           <p><%= key.shirtSize %></p>
         </div>
         <span class="divider"></span>
-        <div>
-          <button class="editButton">Edit</button>
+        <div class="edit-button">
+          <a href="/?edit=<%=key.id%>" class="editButton">Edit</a>
         </div>
       </article>
       <% }) %>

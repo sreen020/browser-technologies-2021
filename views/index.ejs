@@ -16,8 +16,7 @@
   <body>
     <section class="preview-section">
       <header>
-        <h1>LOGO</h1>
-        <h1>ICON</h1>
+        <h1>SR.</h1>
       </header>
       <div class="shirt-container">
         <div class="shirt-title">
@@ -25,7 +24,7 @@
           <p>Create your shirt on this page</p>
         </div>
         <div class="shirt">
-          <h1 id="text-for-edit"></h1>
+          <h1 id="text-for-edit"><%if(excistingShirt){%><%= excistingShirt.userText %><%}%></h1>
           <svg
             style="max-width: 30rem"
             xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +35,7 @@
             <g
               id="shirt-g"
               transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
-              fill="#000000"
+              fill="<%if(excistingShirt){%><%= excistingShirt.shirtColor %><%}else{%> #000000<%}%>"
               stroke="black"
             >
               <path
@@ -88,7 +87,20 @@
       </div>
     </section>
     <section class="adjustment-section">
-      <h2>Icon?</h2>
+      <div class="bag-icon">
+        <a href="/shoppingBag">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6 23.73l-3-2.122v-14.2l3 1.359v14.963zm2-14.855v15.125l13-1.954v-15.046l-13 1.875zm5.963-7.875c-2.097 0-3.958 2.005-3.962 4.266l-.001 1.683c0 .305.273.54.575.494.244-.037.425-.247.425-.494v-1.681c.003-1.71 1.416-3.268 2.963-3.268.537 0 1.016.195 1.384.564.422.423.654 1.035.653 1.727v1.747c0 .305.273.54.575.494.243-.037.423-.246.423-.492l.002-1.749c.002-1.904-1.32-3.291-3.037-3.291zm-6.39 5.995c.245-.037.427-.247.427-.495v-2.232c.002-1.71 1.416-3.268 2.963-3.268l.162.015c.366-.283.765-.513 1.188-.683-.405-.207-.858-.332-1.35-.332-2.096 0-3.958 2.005-3.962 4.266v2.235c0 .306.272.538.572.494z"
+            />
+          </svg>
+        </a>
+      </div>
       <form id="order-form" method="POST" action="/addShoppingBag">
         <h3>Choose color</h3>
         <fieldset id="color-form">
@@ -98,8 +110,8 @@
             name="shirtColor"
             value="red"
             required
-            tabindex="1"
-          />
+            <%if(excistingShirt){%>
+            <% if(excistingShirt.shirtColor == "red"){ %> checked <% }} %> />
           <label for="color-red">Red</label>
 
           <input
@@ -108,8 +120,8 @@
             name="shirtColor"
             value="blue"
             required
-            tabindex="1"
-          />
+            <%if(excistingShirt){%>
+          <%if(excistingShirt.shirtColor == "blue"){%>checked<%}}%> />
           <label for="color-blue">Blue</label>
 
           <input
@@ -118,8 +130,8 @@
             name="shirtColor"
             value="white"
             required
-            tabindex="1"
-          />
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtColor == "white"){%>checked<%}}%> />
           <label for="color-white">White</label>
 
           <input
@@ -128,32 +140,88 @@
             name="shirtColor"
             value="black"
             required
-            tabindex="1"
-          />
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtColor == "black"){%>checked<%}}%> />
           <label for="color-black">Black</label>
         </fieldset>
 
         <h3>Choose gender</h3>
         <fieldset>
-          <input type="radio" id="man" name="gender" value="man" required />
+          <input
+            type="radio"
+            id="man"
+            name="gender"
+            value="man"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.gender == "man"){%>checked<%}}%> />
           <label for="man">Man</label>
-          <input type="radio" id="woman" name="gender" value="woman" required />
+          <input
+            type="radio"
+            id="woman"
+            name="gender"
+            value="woman"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.gender == "woman"){%>checked<%}}%> />
           <label for="woman">Woman</label>
-          <input type="radio" id="other" name="gender" value="other" required />
+          <input
+            type="radio"
+            id="other"
+            name="gender"
+            value="other"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.gender == "other"){%>checked<%}}%> />
           <label for="other">Other</label>
         </fieldset>
 
         <h3>Choose size</h3>
         <fieldset>
-          <input type="radio" id="xs" name="shirtSize" value="xs" required />
+          <input
+            type="radio"
+            id="xs"
+            name="shirtSize"
+            value="xs"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtSize == "xs"){%>checked<%}}%> />
           <label for="xs">XS</label>
-          <input type="radio" id="s" name="shirtSize" value="s" required />
+          <input
+            type="radio"
+            id="s"
+            name="shirtSize"
+            value="s"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtSize == "s"){%>checked<%}}%> />
           <label for="s">S</label>
-          <input type="radio" id="m" name="shirtSize" value="m" required />
+          <input
+            type="radio"
+            id="m"
+            name="shirtSize"
+            value="m"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtSize == "m"){%>checked<%}}%> />
           <label for="m">M</label>
-          <input type="radio" id="l" name="shirtSize" value="l" required />
+          <input
+            type="radio"
+            id="l"
+            name="shirtSize"
+            value="l"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtSize == "l"){%>checked<%}}%> />
           <label for="l">L</label>
-          <input type="radio" id="xl" name="shirtSize" value="xl" required />
+          <input
+            type="radio"
+            id="xl"
+            name="shirtSize"
+            value="xl"
+            required
+            <%if(excistingShirt){%>
+              <%if(excistingShirt.shirtSize == "xl"){%>checked<%}}%> />
           <label for="xl">XL</label>
         </fieldset>
 
@@ -165,12 +233,22 @@
             name="userText"
             maxlength="6"
             placeholder="Type here (max 6)"
+            value="<%if(excistingShirt){%><%= excistingShirt.userText %><%}%>"
           />
         </fieldset>
 
+        <input type="hidden" name="id" value="<%= id %>" />
+
         <fieldset class="submit-field">
           <select id="amount" required name="amount">
-            <option selected="selected" value="" disabled>Amount</option>
+            <option
+              selected="selected"
+              value="<%if(excistingShirt){%><%= excistingShirt.amount %><%}%>"
+              disabled
+            >
+              <%if(excistingShirt){%><%= excistingShirt.amount
+              %><%}else{%>Amount<%}%>
+            </option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -180,6 +258,7 @@
             <option value="8">8</option>
             <option value="9">9</option>
           </select>
+
           <button type="submit">ADD TO BAG</button>
         </fieldset>
       </form>
