@@ -69,6 +69,27 @@
       "shirtSize": "m",
       "userText": "hoi",
       "amount": "1"
+    },
+    {
+      "shirtColor": "red",
+      "gender": "other",
+      "shirtSize": "xl",
+      "userText": "bigRed",
+      "amount": "8"
+    },
+    {
+      "shirtColor": "red",
+      "gender": "man",
+      "shirtSize": "m",
+      "userText": "test",
+      "amount": "1"
+    },
+    {
+      "shirtColor": "black",
+      "gender": "other",
+      "shirtSize": "l",
+      "userText": "",
+      "amount": "3"
     }
   ]
 }
