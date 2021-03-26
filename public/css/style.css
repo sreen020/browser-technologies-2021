@@ -44,7 +44,7 @@ body {
   position: relative;
 }
 
-.shirt h1 {
+.shirt h2 {
   position: absolute;
   left: 0;
   right: 0;
@@ -180,7 +180,7 @@ body {
 #errorMsg {
   color: red;
   font-size: 1rem;
-  padding: 0.4rem ​2rem;
+  padding: 0.4rem 2rem;
   letter-spacing: 0.5px;
 }
 

@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="/js/script.js" type="module"></script>
+    <script nomodule src="/js/script-bundle.js"></script>
   </head>
   <body>
     <section class="bag-section">
@@ -95,14 +96,13 @@
         </div>
         <span class="divider"></span>
         <div class="edit-button">
-          <a href="/?edit=<%=key.id%>" class="editButton">Edit</a>
+          <a href="/?edit=<%=key.id%>" class="editButton"><p aria-label="button to edit shirt">Edit</p></a>
         </div>
       </article>
       <% }) %>
 
       <div class="button-container">
-        <a href="/">STORE</a>
-        <a>CHECKOUT</a>
+        <a href="/"><p aria-label="button to store">STORE</p></a>
       </div>
     </section>
   </body>

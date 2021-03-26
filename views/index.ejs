@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <script src="/js/script.js" type="module"></script>
+    <script nomodule src="/js/script-bundle.js"></script>
   </head>
   <body>
     <section class="preview-section">
@@ -24,7 +25,7 @@
           <p>Create your shirt on this page</p>
         </div>
         <div class="shirt">
-          <h1 id="text-for-edit"><%if(excistingShirt){%><%= excistingShirt.userText %><%}%></h1>
+          <h2 id="text-for-edit"><%if(excistingShirt){%><%= excistingShirt.userText %><%}%></h2>
           <svg
             style="max-width: 30rem"
             xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,7 @@
     <section class="adjustment-section">
       <div class="bag-icon">
         <a href="/shoppingBag">
-          <svg
+          <svg aria-label="button to shopping bag" 
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"

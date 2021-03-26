@@ -20,7 +20,3 @@ export default function storeShirt() {
     localStorage.setItem(id, JSON.stringify(data));
   });
 }
-
-function createButton() {
-  document.querySelectorAll(".edit-button");
-}
