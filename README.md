@@ -70,6 +70,14 @@ Om het de gebruiker makkelijker en fijner te maken kan je vanuit deze pagina het
 - Safari desktop en iphone
 - Opera op android telefoon
 
+Tijdens het ontwikkelen van mijn website heb ik veel gelet op wat ik wel en niet kan gebruiken. Zo heb ik caniuse.com ten alle tijden open gehad. Ik werk normaal graag met display grid, in deze webshop heb ik vooral gewerkt met Flexbox. Zo heb ik ook gekeken naar veel ingebakken javascript functionaliteiten. 
+
+Tijdens het testen heb ik een aantal dringen gevonden. 
+- Er wordt op iphone een border radius meegegeven aan een input type:text 
+- De native select ziet er overal erg verschillend uit
+- Display grid werkt niet overal, uiteindelijk heb ik dit omgebouwd naar display flex (IE8+)
+- SVG moeten een bepaalde breedte meekrijgen
+- 
 
 ## Testing
 
