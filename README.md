@@ -95,4 +95,4 @@ Ik ben erg geschrokken wanneer ik deze accessibility checker deed… Na een bijn
 - EERDER BEGINNEN MET DIT TESTEN
 
 **W3 validation** <br>
-<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/github-images/lighthouse.png" width="100%">
+<img src="https://github.com/sreen020/progressive-web-apps-2021/blob/master/public/img/github-images/lighthouse.png" width="500">
