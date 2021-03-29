@@ -11,7 +11,9 @@ Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waa
 - Verder gaan waar je gebleven bent/ontwerp herzien
 - Validatie: alles moet zijn ingevuld. Geef duidelijke foutmeldingen
 - Gebruiker moet meerdere t-shirts kunnen maken en herzien, en moet dus een overzichtspagina hebben.
-- Bestel pagina om een ontwerp kopen en laten maken
+
+## live link
+https://make-your-own-shirt.herokuapp.com/
 
 ## Core-functionaliteiten
 Op deze website moet het mogelijk zijn om een t-shirt te bestellen. Dit t-shirt is verkrijgbaar in meerdere kleuren, maten en voor meerdere geslachten. Ook wil ik mijn eigen text op dit shirt kunnen zetten. Wanneer ik een shirt heb ontworpen wil ik deze kunnen terugvinden op een detail pagina. Vanaf deze datail pagina kan ik mijn ontwerp aanpassen of bestellen.
