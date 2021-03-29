@@ -120,6 +120,7 @@ body {
   padding: 1rem;
   border-radius: 0;
   border: 1px solid black;
+  background-color: none;
   cursor: pointer;
 }
 
@@ -161,6 +162,7 @@ body {
 .adjustment-section form .text-fieldset {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .adjustment-section form .text-fieldset input {
