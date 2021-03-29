@@ -42,6 +42,27 @@ Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waa
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="100%">
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="100%">
 
+**Shop page**
+- functional/reliable layer
+Het zou niet moeten uitmaken in welk scenario de gebruiker zich bevindt, je moet hier een shirt kunnen toevoegen aan jouw winkelmandje.
+
+- The usable layer
+In plaats van een display flex wordt er hier gebruik gemaakt van een grid layout. Grid is iets preciezer met de positionering van elementen en kan "two dimensional" positioneren.
+
+- Pleasurable layer
+Wanneer de user Javascript aan heeft staan zal de kleur van het shirt meekleuren met de input van de gebruiker. Dit geldt ook voor de custom tekst die gelijk wordt geprint op het voorbeeld-shirt.
+
+
+**Overview page**
+- functional/reliable layer
+Het zou niet moeten uitmaken in welk scenario de gebruiker zich bevindt, je moet hier een eerder toegevoegd shirt kunnen bekijken.
+
+- The usable layer
+Door styling toe te voegen wordt deze pagina voor de gebruiker een stuk gebruiksvriendelijker. Zowel voor desktop als voor mobiel is deze pagina mooi en overzichtelijk.
+
+- Pleasurable layer
+Om het de gebruiker makkelijker en fijner te maken kan je vanuit deze pagina het eerder gemaakte shirt bewerken.
+
 
 **Op welke browsers ga ik testen?**
 - Google Chrome Desktop en android telefoon
