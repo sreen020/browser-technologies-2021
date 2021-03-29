@@ -1,5 +1,24 @@
 # Browser Tochnologies
 
+## Installation
+1. Clone repo
+```
+git clone git@github.com:sreen020/browser-technologies-2021.git
+```
+
+2. Install packages
+```
+npm install
+```
+
+3. Start server
+```
+npm run watch
+```
+
+## live demo
+https://make-your-own-shirt.herokuapp.com/
+
 ## Case
 Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waarop je jouw eigen t-shirt kan ontwerpen. Natuurlijk zitten hier een aantal beoordelingscriterea aan vast.
 
@@ -12,9 +31,6 @@ Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waa
 - Validatie: alles moet zijn ingevuld. Geef duidelijke foutmeldingen
 - Gebruiker moet meerdere t-shirts kunnen maken en herzien, en moet dus een overzichtspagina hebben.
 
-## live demo
-https://make-your-own-shirt.herokuapp.com/
-
 ## Core-functionaliteiten
 - Ik als gebruiker wil op deze website een t-shirt kunnen te bestellen
 - Ik als gebruiker wil de keuze kunnen maken om dit t-shirt te verkrijgen in meerdere kleuren, maten en voor meerdere geslachten
@@ -23,7 +39,6 @@ https://make-your-own-shirt.herokuapp.com/
 - Ik als gebruiker wil een eerder gemaakt t-shirt kunnen aanpassen
 
 ## Schetsen
-
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="100%">
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="100%">
 
