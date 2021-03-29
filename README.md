@@ -39,8 +39,8 @@ Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waa
 - Ik als gebruiker wil een eerder gemaakt t-shirt kunnen aanpassen
 
 ## Schetsen
-<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="100%">
-<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="100%">
+<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="800">
+<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="800">
 
 **Shop page**
 - functional/reliable layer <br>
@@ -82,7 +82,7 @@ Op de detail-pagina krijg ik dezelfde warning wanneer een gebruiker geen tekst h
 **Powermapper** <br>
 Ik ben erg geschrokken wanneer ik deze accessibility checker deed… Na een bijna foutloze html validatie kwam ik hier op een pagina met alleen maar rood. “51% have issues, worse than average”.
 
-**Ik heb een aantal gefixed:**
+**Gefixed:**
 - Meerdere h1 elementen
 - Sommige browsers ondersteunen geen modules
 - aria-label gebruiken op tekst binnen een a element
