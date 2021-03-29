@@ -1,27 +1,3 @@
 {
-  "data": [
-    {
-      "shirtColor": "red",
-      "gender": "woman",
-      "shirtSize": "m",
-      "userText": "asdb",
-      "id": "1616760248840"
-    },
-    {
-      "shirtColor": "blue",
-      "gender": "woman",
-      "shirtSize": "s",
-      "userText": "",
-      "id": "1616936779471",
-      "amount": "1"
-    },
-    {
-      "shirtColor": "red",
-      "gender": "woman",
-      "shirtSize": "m",
-      "userText": "hgvjhv",
-      "id": "1616936888782",
-      "amount": "1"
-    }
-  ]
+  "data": []
 }

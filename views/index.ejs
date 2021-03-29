@@ -110,7 +110,7 @@
             id="color-red"
             name="shirtColor"
             value="red"
-            
+            required
             <%if(excistingShirt){%>
             <% if(excistingShirt.shirtColor == "red"){ %> checked <% }} %> />
           <label for="color-red">Red</label>
@@ -120,7 +120,7 @@
             id="color-blue"
             name="shirtColor"
             value="blue"
-            
+            required
             <%if(excistingShirt){%>
           <%if(excistingShirt.shirtColor == "blue"){%>checked<%}}%> />
           <label for="color-blue">Blue</label>
@@ -130,7 +130,7 @@
             id="color-white"
             name="shirtColor"
             value="white"
-            
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtColor == "white"){%>checked<%}}%> />
           <label for="color-white">White</label>
@@ -140,7 +140,7 @@
             id="color-black"
             name="shirtColor"
             value="black"
-            
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtColor == "black"){%>checked<%}}%> />
           <label for="color-black">Black</label>
@@ -153,6 +153,7 @@
             id="man"
             name="gender"
             value="man"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.gender == "man"){%>checked<%}}%> />
           <label for="man">Man</label>
@@ -161,6 +162,7 @@
             id="woman"
             name="gender"
             value="woman"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.gender == "woman"){%>checked<%}}%> />
           <label for="woman">Woman</label>
@@ -169,6 +171,7 @@
             id="other"
             name="gender"
             value="other"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.gender == "other"){%>checked<%}}%> />
           <label for="other">Other</label>
@@ -181,6 +184,7 @@
             id="xs"
             name="shirtSize"
             value="xs"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtSize == "xs"){%>checked<%}}%> />
           <label for="xs">XS</label>
@@ -189,6 +193,7 @@
             id="s"
             name="shirtSize"
             value="s"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtSize == "s"){%>checked<%}}%> />
           <label for="s">S</label>
@@ -197,6 +202,7 @@
             id="m"
             name="shirtSize"
             value="m"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtSize == "m"){%>checked<%}}%> />
           <label for="m">M</label>
@@ -205,6 +211,7 @@
             id="l"
             name="shirtSize"
             value="l"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtSize == "l"){%>checked<%}}%> />
           <label for="l">L</label>
@@ -213,6 +220,7 @@
             id="xl"
             name="shirtSize"
             value="xl"
+            required
             <%if(excistingShirt){%>
               <%if(excistingShirt.shirtSize == "xl"){%>checked<%}}%> />
           <label for="xl">XL</label>

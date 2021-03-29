@@ -5,6 +5,16 @@ export default function formValidation() {
   const sizeForm = document.querySelectorAll("#size-form input");
   const errorElement = document.getElementById("errorMsg");
 
+  colorForm.forEach((form) => {
+    form.required = false
+  })
+  genderForm.forEach((form) => {
+    form.required = false
+  })
+  sizeForm.forEach((form) => {
+    form.required = false
+  })
+
   form.addEventListener("submit", (e) => {
     let messages = [];
     if (![...colorForm].some((el) => el.checked == true)) {
