@@ -1,90 +1,26 @@
 {
   "data": [
     {
+      "shirtColor": "red",
+      "gender": "woman",
+      "shirtSize": "m",
+      "userText": "asdb",
+      "id": "1616760248840"
+    },
+    {
       "shirtColor": "blue",
       "gender": "woman",
-      "shirtSize": "m",
-      "userText": "a",
-      "id": "1616687178092"
-    },
-    {
-      "shirtColor": "blue",
-      "gender": "woman",
-      "shirtSize": "s",
-      "userText": "b",
-      "id": "1616687196988",
-      "amount": "2"
-    },
-    {
-      "shirtColor": "white",
-      "gender": "other",
-      "shirtSize": "l",
-      "userText": "c",
-      "id": "1616687213794",
-      "amount": "3"
-    },
-    {
-      "gender": "man",
       "shirtSize": "s",
       "userText": "",
-      "id": "1616750808194",
-      "amount": "8"
-    },
-    {
-      "gender": "woman",
-      "shirtSize": "m",
-      "userText": "",
-      "id": "1616753766792",
-      "amount": "6"
-    },
-    {
-      "gender": "man",
-      "shirtSize": "s",
-      "userText": "",
-      "id": "1616754748182",
+      "id": "1616936779471",
       "amount": "1"
-    },
-    {
-      "gender": "woman",
-      "shirtSize": "s",
-      "userText": "",
-      "id": "1616754795837",
-      "amount": "1"
-    },
-    {
-      "gender": "woman",
-      "shirtSize": "s",
-      "userText": "",
-      "id": "1616754823823",
-      "amount": "1"
-    },
-    {
-      "gender": "woman",
-      "shirtSize": "m",
-      "userText": "",
-      "id": "1616754883009",
-      "amount": "2"
-    },
-    {
-      "gender": "woman",
-      "shirtSize": "m",
-      "userText": "",
-      "id": "1616754891733",
-      "amount": "2"
-    },
-    {
-      "gender": "woman",
-      "shirtSize": "m",
-      "userText": "",
-      "id": "1616754949026",
-      "amount": "2"
     },
     {
       "shirtColor": "red",
-      "gender": "man",
-      "shirtSize": "xs",
-      "userText": "aAaA",
-      "id": "1616757342991",
+      "gender": "woman",
+      "shirtSize": "m",
+      "userText": "hgvjhv",
+      "id": "1616936888782",
       "amount": "1"
     }
   ]
