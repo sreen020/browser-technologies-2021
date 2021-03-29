@@ -69,3 +69,28 @@ Om het de gebruiker makkelijker en fijner te maken kan je vanuit deze pagina het
 - Firefox desktop
 - Safari desktop en iphone
 - Opera op android telefoon
+
+
+## Testing
+
+**W3 validation** <br>
+https://make-your-own-shirt.herokuapp.com/
+Tijdens het valideren van de html op de homepagina kreeg ik geen errors. Wel één warning. In mijn webshop maak ik gebruik van client-side form validatie. Wanneer er iets mis is wordt dit in een tekst element “gepushed” Dit betekend dat het element normaal leeg is. Dit is semantisch niet correct maar ik ga dit in dit project niet meer aanpassen. 
+Dit kan verholpen worden door het element met javascript aan te maken.
+
+Op de detail-pagina krijg ik dezelfde warning wanneer een gebruiker geen tekst heeft geselecteerd. Dit is de keuze van de gebruiker dus ik kan hier geen validatie op zetten. Wat wel een oplossing kan zijn is het pas genereren van de tekst elementen wanneer gebruiker iets invult.
+
+**Powermapper** <br>
+Ik ben erg geschrokken wanneer ik deze accessibility checker deed… Na een bijna foutloze html validatie kwam ik hier op een pagina met alleen maar rood. “51% have issues, worse than average”.
+
+**Ik heb een aantal gefixed:**
+- Meerdere h1 elementen
+- Sommige browsers ondersteunen geen modules
+- aria-label gebruiken op tekst binnen een a element
+- Elk article of section moet een header hebben
+
+**Nog te fixen in de toekomst:**
+- Elke fieldset moet een legend element krijgen 
+- Er moet  altijd 1 radio button gecheckt zijn
+- Select moet een label krijgen
+- EERDER BEGINNEN MET DIT TESTEN
