@@ -39,8 +39,8 @@ Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waa
 - Ik als gebruiker wil een eerder gemaakt t-shirt kunnen aanpassen
 
 ## Schetsen
-<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="100%">
-<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="100%">
+<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="800">
+<img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="800">
 
 **Shop page**
 - functional/reliable layer <br>
@@ -70,11 +70,18 @@ Om het de gebruiker makkelijker en fijner te maken kan je vanuit deze pagina het
 - Safari desktop en iphone
 - Opera op android telefoon
 
+Tijdens het ontwikkelen van mijn website heb ik veel gelet op wat ik wel en niet kan gebruiken. Zo heb ik caniuse.com ten alle tijden open gehad. Ik werk normaal graag met display grid, in deze webshop heb ik vooral gewerkt met Flexbox. Zo heb ik ook gekeken naar veel ingebakken javascript functionaliteiten. 
+
+Tijdens het testen heb ik een aantal dringen gevonden. 
+- Er wordt op iphone een border radius meegegeven aan een input type:text 
+- De native select ziet er overal erg verschillend uit
+- Display grid werkt niet overal, uiteindelijk heb ik dit omgebouwd naar display flex (IE8+)
+- SVG moeten een bepaalde breedte meekrijgen
+- 
 
 ## Testing
 
 **W3 validation** <br>
-https://make-your-own-shirt.herokuapp.com/
 Tijdens het valideren van de html op de homepagina kreeg ik geen errors. Wel één warning. In mijn webshop maak ik gebruik van client-side form validatie. Wanneer er iets mis is wordt dit in een tekst element “gepushed” Dit betekend dat het element normaal leeg is. Dit is semantisch niet correct maar ik ga dit in dit project niet meer aanpassen. 
 Dit kan verholpen worden door het element met javascript aan te maken.
 
@@ -83,7 +90,7 @@ Op de detail-pagina krijg ik dezelfde warning wanneer een gebruiker geen tekst h
 **Powermapper** <br>
 Ik ben erg geschrokken wanneer ik deze accessibility checker deed… Na een bijna foutloze html validatie kwam ik hier op een pagina met alleen maar rood. “51% have issues, worse than average”.
 
-**Ik heb een aantal gefixed:**
+**Gefixed:**
 - Meerdere h1 elementen
 - Sommige browsers ondersteunen geen modules
 - aria-label gebruiken op tekst binnen een a element
@@ -94,3 +101,6 @@ Ik ben erg geschrokken wanneer ik deze accessibility checker deed… Na een bijn
 - Er moet  altijd 1 radio button gecheckt zijn
 - Select moet een label krijgen
 - EERDER BEGINNEN MET DIT TESTEN
+
+**W3 validation** <br>
+<img src="https://github.com/sreen020/progressive-web-apps-2021/blob/master/public/img/github-images/lighthouse.png" width="500">
