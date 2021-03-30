@@ -42,6 +42,25 @@ Na alle cases bekijken kwam ik snel tot een besluit. Ik ga een website maken waa
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0119%201.png" width="800">
 <img src="https://github.com/sreen020/browser-technologies-2021/blob/master/public/img/IMG_0120%201.png" width="800">
 
+## Progressive enhancement 
+
+**HTML**<br>
+Wanneer alleen de html werkt, ziet de website er natuurlijk niet meer hetzelfde uit. Hij werkt wel nog steeds (zo goed als) hetzelfde. De core functionaliteiten zijn nog steeds beschikbaar:
+- Aanmaken shirt
+- Shirt maat, geslacht, kleur en tekst meegeven
+- Overzichtpagina met gemaakte shirts
+- Gemaakte shirts kunnen aanpassen
+
+**CSS**<br>
+Wanneer deze laag wordt aangezet zal dit niet veel nieuwe functionaliteiten toevoegen. Wel zal dit een “lelijke”, lege html pagina omtoveren tot een werkelijke, gebruikersvriendelijke webshop. Dat is natuurlijk niet niks. Het uiterlijk van de website laat zien waar jij als merk voor staat. Wanneer de website onduidelijk en lelijk is zal de gebruiker misschien niet overgaan tot aankoop.
+
+**Javascript**<br>
+Tijdens het maken an deze app heb ik alle core functionaliteiten op de server gedaan. Alleen de enhancements gebeuren op de client. Wanneer javascript aanstaat zullen de volgende enhancements werken:
+- Wanneer de gebruiker een kleur kiest zal het voorbeeld shirt in deze kleur veranderen.
+- Wanneer de gebruiker een eigen tekst invult zal op het moment van typen de tekst op het voorbeeld geprint worden.
+- De html “require” attributen zullen worden weggehaald en er zal een client-side form validatie plaatsvinden.
+<br><br>
+
 **Shop page**
 - functional/reliable layer <br>
 Het zou niet moeten uitmaken in welk scenario de gebruiker zich bevindt, je moet hier een shirt kunnen toevoegen aan jouw winkelmandje.
